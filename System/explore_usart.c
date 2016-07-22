@@ -16,6 +16,7 @@ u8 USART_RX_BUF[USART_REC_LEN];						// 接收缓冲,最大USART_REC_LEN个字�
 void USART1_IRQHandler(void)
 {
 	u8 Res;								// 用于保存本次串口接收到的字节
+	OSIntEnter();
 	if(USART_GetITStatus(USART1, USART_IT_RXNE) != RESET)		// 判断是不是接受中断,如果是接受中断,执行if里面的代码
 	{
 		Res = USART_ReceiveData(USART1);			// 读取串口1接收到的数据
@@ -50,6 +51,7 @@ void USART1_IRQHandler(void)
 			}
 		}
 	}
+	OSIntExit();
 }
 
 /**

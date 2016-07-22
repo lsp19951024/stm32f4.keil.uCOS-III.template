@@ -69,11 +69,10 @@ void SysTick_Handler(void)
  */
 void Systick_Init(u8 system_clock)
 {
-	u32 reload;							// 如果需要支持OS，则定义一个reload变量
- 	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);		// SYSTICK使用外部时钟源
-	fac_us = system_clock/8;					// 不论是否使用OS，fac_us都需要使用
-	// reload为24位寄存器，最大值：16777216，在72M下，约合1.86s左右
-	reload = system_clock/8;					// 每秒钟的计数次数 单位为K
+	u32 reload;							// 表示一个时钟节拍时间滴答定时器的计数值
+ 	SysTick_CLKSourceConfig(SysTick_CLKSource_HCLK_Div8);		// SYSTICK使用外部时钟源的8分频
+	fac_us = system_clock/8;					// 定时器1us滴答定时器的计数值
+	reload = system_clock/8;					// 中间过程
 	reload *= 1000000/delay_ostickspersec;				// 根据delay_ostickspersec设定溢出时间
 	fac_ms = 1000/delay_ostickspersec;				// 代表OS可以延时的最少单位
 	SysTick->CTRL |= SysTick_CTRL_TICKINT_Msk;			// 开启SYSTICK中断
