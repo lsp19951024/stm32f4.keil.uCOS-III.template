@@ -1,0 +1,16 @@
+..\output\explore_usart.o: ..\System\explore_usart.c
+..\output\explore_usart.o: ..\System\explore_usart.h
+..\output\explore_usart.o: D:\Program_Files\MDK\ARM\ARMCC\Bin\..\include\stdio.h
+..\output\explore_usart.o: ..\Core\stm32f4xx.h
+..\output\explore_usart.o: ..\Core\core_cm4.h
+..\output\explore_usart.o: D:\Program_Files\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\explore_usart.o: ..\Core\core_cmInstr.h
+..\output\explore_usart.o: ..\Core\core_cmFunc.h
+..\output\explore_usart.o: ..\Core\core_cm4_simd.h
+..\output\explore_usart.o: ..\Core\system_stm32f4xx.h
+..\output\explore_usart.o: ..\User\stm32f4xx_conf.h
+..\output\explore_usart.o: ..\Libraries\inc\stm32f4xx_gpio.h
+..\output\explore_usart.o: ..\Core\stm32f4xx.h
+..\output\explore_usart.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\explore_usart.o: ..\Libraries\inc\stm32f4xx_usart.h
+..\output\explore_usart.o: ..\Libraries\inc\misc.h

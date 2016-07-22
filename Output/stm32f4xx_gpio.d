@@ -1,0 +1,15 @@
+..\output\stm32f4xx_gpio.o: ..\Libraries\src\stm32f4xx_gpio.c
+..\output\stm32f4xx_gpio.o: ..\Libraries\inc\stm32f4xx_gpio.h
+..\output\stm32f4xx_gpio.o: ..\Core\stm32f4xx.h
+..\output\stm32f4xx_gpio.o: ..\Core\core_cm4.h
+..\output\stm32f4xx_gpio.o: D:\Program_Files\MDK\ARM\ARMCC\Bin\..\include\stdint.h
+..\output\stm32f4xx_gpio.o: ..\Core\core_cmInstr.h
+..\output\stm32f4xx_gpio.o: ..\Core\core_cmFunc.h
+..\output\stm32f4xx_gpio.o: ..\Core\core_cm4_simd.h
+..\output\stm32f4xx_gpio.o: ..\Core\system_stm32f4xx.h
+..\output\stm32f4xx_gpio.o: ..\User\stm32f4xx_conf.h
+..\output\stm32f4xx_gpio.o: ..\Libraries\inc\stm32f4xx_gpio.h
+..\output\stm32f4xx_gpio.o: ..\Libraries\inc\stm32f4xx_rcc.h
+..\output\stm32f4xx_gpio.o: ..\Core\stm32f4xx.h
+..\output\stm32f4xx_gpio.o: ..\Libraries\inc\stm32f4xx_usart.h
+..\output\stm32f4xx_gpio.o: ..\Libraries\inc\misc.h
